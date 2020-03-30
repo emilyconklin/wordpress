@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+/* Header */
+
+.site-header {
+  background-image: url("img/law.jpg");
+  background-position: top;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  height: 400px;
+  margin-bottom: 1rem;
+}
+
+/* Footer */
+
+.site-footer {
+  right: 0;
+  bottom: 0;
+
+  left: 0;
+  width: 100%;
+
+  height: 100px;
+  margin-top: 1rem;
+
+  background-color: #333;
+}
+
+/* Main Content Width */
+
+#content {
+  max-width: 1200px;
+  margin: auto;
+
+  padding: 1rem;
+}
+
+/* Navigation */
+
+.main-navigation {
+  width: 100%;
+  background-color: rgb(39, 39, 39);
+
+  margin: auto;
+  padding: 1rem;
+
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+
+  text-align: center;
+}
+
+.main-navigation ul {
+  display: flex;
+  justify-content: space-evenly;
+
+  flex-wrap: wrap;
+  list-style: none;
+
+  font-size: 1.4rem;
+}
+
+.main-navigation li {
+  margin-left: 0;
+}
+
+.main-navigation a {
+  color: white;
+  text-decoration: none;
+
+  font-family: 'Playfair Display', serif;
+  
+}
+
+.main-navigation a:hover {
+  border-bottom: 1px solid white;
+  color: white;
+}
+
+/* Main Content ULs & Li Styles */
+/* The posts are all placed in unordered lists and I put display flex on them to get them to go side-by-side */
+
+.wp-block-latest-posts {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.wp-block-latest-posts__post-full-content {
+  margin-top: 1rem;
+}
+
+.wp-block-latest-posts__list li {
+  margin-bottom: 1rem;
+  max-width: 300px;
+
+  height: 250px;
+  margin: auto;
+}
+
+/* Hides post navigation and post footer */
+
+.post-navigation {
+  display: none;
+}
+
+.entry-footer {
+  display: none;
+}
+
+/* H1 Styles */
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  color: rgb(0, 0, 65);
+
+  font-size: 2.5rem;
+  font-size: 2.5rem;
+
+  margin-bottom: 1rem;
+}
+
+/* Paragraph Styles */
+
+p {
+  margin-top: 1rem;
+}
+
+/* Practice Area Lis (The acctual bulleted lists in the posts) */
+
+li {
+  margin-left: 2rem;
+  margin-top: .5rem;
+}
+
+/* Main Content Area Links */ 
+/* The posts are displayed on the page in the form of ULs, this is to style the links in the posts which are nested in the Lis */
+
+li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+li a:hover {
+  color: rgb(56, 99, 136);
+}
+
+/* Form */
+
+form {
+  margin: auto;
+  margin-bottom: 1.5rem;
+
+  max-width: 500px;
+  text-align: center;
+}
+
+input {
+  width: 200px;
+  text-align: center;
+
+  padding: 3px;
+  margin-top: .3rem;
+}
+
+textarea {
+  margin-top: .3rem;
+}
+
+/* Form Submit */
+
+.wpcf7-submit {
+  background-color: rgb(0, 0, 65);
+  border: 0;
+
+  color: white;
+  padding: 5px;
+  border-radius: .5rem;
+}
+
+.wpcf7-submit:hover {
+  background-color: rgb(39, 39, 39);
+}
+
+/* Bio Pics */
+
+.post-thumbnail img {
+  height: 300px;
+  width: 300px;
+
+  display: block;
+  object-fit: cover;
+}
+
+/* Current Page */
+/* Jr helped me with the current page selector */
+
+.current_page_item a {
+  background-color: rgb(0, 0, 65);
+
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+
+  padding-top: .5rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+}
+
+.current_page_item a:hover {
+  background-color: black;
+  color: white;
+  border: 0;
+}
